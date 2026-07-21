@@ -35,7 +35,10 @@ app.get("/health", (req, res) => {
         status: "healthy"
     });
 });
-
+// Catch-all 404 handler for unknown routes
+app.use((req, res) => {
+    res.status(404).json({ error: "Route not found" });
+});
 // Start Server
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
