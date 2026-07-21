@@ -4,7 +4,8 @@
   "description": "Simple Node.js Express Web Application",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+     "test": "echo \"No test specified\" && exit 0"
   },
   "keywords": [
     "node",
